@@ -25,7 +25,7 @@ const FileAnalyzer: React.FC = () => {
     data.append('file', file);
 
     try {
-      const res = await fetch('http://localhost:5000/api/analyze', {
+      const res =  await fetch("http://localhost:5000/api/analyze", {
         method: 'POST',
         body: data,
       });
